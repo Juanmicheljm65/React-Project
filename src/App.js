@@ -16,7 +16,7 @@ function App() {
       corSecundaria: "#e8f8ff",
     },
     {
-      nome: "Data Sciense",
+      nome: "Data Science",
       corPrimaria: "#a6d157",
       corSecundaria: "#f0f8e2",
     },
@@ -66,6 +66,9 @@ function App() {
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter(
+            (colaborador) => colaborador.time === time.nome
+          )}
         />
       ))}
     </div>
